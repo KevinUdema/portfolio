@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Hero() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-background to-background px-4 py-20">
@@ -16,12 +18,12 @@ export function Hero() {
 
         {/* CTA Button with staggered animation */}
         <div className={`transition-all duration-1000 delay-300 `}>
-          <a
+          <Link
             href="#projects"
             className="inline-block px-8 py-3 bg-foreground text-background rounded-lg font-semibold hover:bg-foreground/90 transition-all duration-300 hover:scale-105 active:scale-95"
           >
             View my work
-          </a>
+          </Link>
         </div>
 
         {/* Scroll indicator with gentle animation */}
