@@ -1,5 +1,3 @@
-"use client";
-
 import { about } from "@/data/portfolio";
 
 export function About() {

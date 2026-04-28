@@ -1,5 +1,3 @@
-"use client";
-
 import { skills } from "@/data/portfolio";
 
 export function Skills() {

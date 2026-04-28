@@ -1,5 +1,3 @@
-"use client";
-
 import { projects } from "@/data/portfolio";
 import Image from "next/image";
 

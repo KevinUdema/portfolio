@@ -1,4 +1,3 @@
-"use client";
 export function Hero() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-background to-background px-4 py-20">
@@ -11,10 +10,7 @@ export function Hero() {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-foreground/70 mb-12 max-w-2xl mx-auto leading-relaxed">
-            This is my portfolio, showcasing my work as a web developer. I
-            specialize in creating modern, responsive websites and applications
-            with a focus on user experience and clean code. Explore my projects
-            and skills below!
+            This is my portfolio, showcasing my work as a front-end developer.
           </p>
         </div>
 
