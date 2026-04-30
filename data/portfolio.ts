@@ -1,6 +1,6 @@
 export interface Skill {
   category: string;
-  items: string[];
+  items: { name: string; logo: string }[];
 }
 
 export interface Project {
@@ -22,19 +22,41 @@ export interface ContactLink {
 export const skills: Skill[] = [
   {
     category: "Frontend",
-    items: ["React", "Vue.js", "Next.js", "TypeScript", "JavaScript"],
+    items: [
+      { name: "React", logo: "/next.svg" },
+      { name: "Vue.js", logo: "/next.svg" },
+      { name: "Next.js", logo: "/next.svg" },
+      { name: "TypeScript", logo: "/next.svg" },
+      { name: "JavaScript", logo: "/next.svg" },
+    ],
   },
   {
     category: "UI/UX",
-    items: ["Tailwind CSS", "CSS3", "Responsive Design", "Accessibility", "Design Systems"],
+    items: [
+      { name: "Tailwind CSS", logo: "/next.svg" },
+      { name: "CSS3", logo: "/next.svg" },
+      { name: "Responsive Design", logo: "/next.svg" },
+      { name: "Accessibility", logo: "/next.svg" },
+      { name: "Design Systems", logo: "/next.svg" },
+    ],
   },
   {
     category: "Mobile",
-    items: ["React Native", "Mobile-First Design", "Touch Optimization", "Progressive Web Apps"],
+    items: [
+      { name: "React Native", logo: "/next.svg" },
+      { name: "Mobile-First Design", logo: "/next.svg" },
+      { name: "Touch Optimization", logo: "/next.svg" },
+      { name: "Progressive Web Apps", logo: "/next.svg" },
+    ],
   },
   {
     category: "TypeScript",
-    items: ["Type Safety", "Interfaces", "Generics", "Advanced Types"],
+    items: [
+      { name: "Type Safety", logo: "/next.svg" },
+      { name: "Interfaces", logo: "/next.svg" },
+      { name: "Generics", logo: "/next.svg" },
+      { name: "Advanced Types", logo: "/next.svg" },
+    ],
   },
 ];
 
