@@ -6,21 +6,24 @@ export function Skills() {
     <section className="w-full py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
-          Skills & expertise
+          Skills
         </h2>
 
         <div className="flex flex-col gap-8">
           {skills.map((skillGroup) => (
-            <div key={skillGroup.category} className="flex gap-8">
-              {/* Category Title - 40% */}
-              <div className="w-2/5 flex-shrink-0">
+            <div
+              key={skillGroup.category}
+              className="flex flex-col md:flex-row gap-8"
+            >
+              {/* Category Title*/}
+              <div className="w-full md:w-2/5 flex-shrink-0">
                 <h3 className="text-3xl font-bold text-foreground uppercase tracking-wide">
                   {skillGroup.category}
                 </h3>
               </div>
 
-              {/* Items - 60% */}
-              <div className="w-3/5">
+              {/* Items*/}
+              <div className="w-full md:w-3/5">
                 <ul className="flex flex-wrap gap-4 text-lg">
                   {skillGroup.items.map((item) => (
                     <li
