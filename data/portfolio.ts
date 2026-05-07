@@ -19,43 +19,50 @@ export interface ContactLink {
 }
 
 // Skills data - easily extensible with new categories
+
 export const skills: Skill[] = [
   {
     category: "Frontend",
     items: [
-      { name: "React", logo: "/next.svg" },
-      { name: "Vue.js", logo: "/next.svg" },
-      { name: "Next.js", logo: "/next.svg" },
-      { name: "TypeScript", logo: "/next.svg" },
-      { name: "JavaScript", logo: "/next.svg" },
+      { name: "React", logo: "icons/next.svg" },
+      { name: "Bootstrap", logo: "icons/next.svg" },
+      { name: "Next.js", logo: "icons/next.svg" },
+      { name: "TypeScript", logo: "icons/next.svg" },
+      { name: "JavaScript", logo: "icons/next.svg" },
+      { name: "HTML5", logo: "icons/next.svg" },
     ],
   },
   {
     category: "UI/UX",
     items: [
-      { name: "Tailwind CSS", logo: "/next.svg" },
-      { name: "CSS3", logo: "/next.svg" },
-      { name: "Responsive Design", logo: "/next.svg" },
-      { name: "Accessibility", logo: "/next.svg" },
-      { name: "Design Systems", logo: "/next.svg" },
-    ],
-  },
-  {
-    category: "Mobile",
-    items: [
-      { name: "React Native", logo: "/next.svg" },
+      { name: "Tailwind CSS", logo: "icons/next.svg" },
+      { name: "CSS3", logo: "icons/next.svg" },
       { name: "Mobile-First Design", logo: "/next.svg" },
-      { name: "Touch Optimization", logo: "/next.svg" },
+      { name: "Responsive Design", logo: "icons/next.svg" },
+      { name: "Accessibility", logo: "icons/next.svg" },
+      { name: "Figma", logo: "icons/next.svg" },
       { name: "Progressive Web Apps", logo: "/next.svg" },
     ],
   },
   {
-    category: "TypeScript",
+    category: "Tools",
     items: [
-      { name: "Type Safety", logo: "/next.svg" },
-      { name: "Interfaces", logo: "/next.svg" },
-      { name: "Generics", logo: "/next.svg" },
-      { name: "Advanced Types", logo: "/next.svg" },
+      { name: "Github", logo: "/next.svg" },
+      { name: "Github Copilot", logo: "/next.svg" },
+      { name: "VS Code", logo: "/next.svg" },
+      { name: "Postman", logo: "/next.svg" },
+      { name: "Node.JS", logo: "/next.svg" },
+      { name: "MySQL", logo: "/next.svg" },
+      
+    ],
+  },
+  {
+    category: "Softskills",
+    items: [
+      { name: "Solution oriented", logo: "/next.svg" },
+      { name: "Collaboration", logo: "/next.svg" },
+      { name: "Eager to learn", logo: "/next.svg" },
+      { name: "Customer-oriented", logo: "/next.svg" },
     ],
   },
 ];
