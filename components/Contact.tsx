@@ -1,5 +1,3 @@
-"use client";
-
 import { contactLinks } from "@/data/portfolio";
 
 export function Contact() {

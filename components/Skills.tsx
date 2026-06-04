@@ -33,8 +33,8 @@ export function Skills() {
                       <Image
                         src={item.logo}
                         alt={`${item.name} logo`}
-                        width={70}
-                        height={70}
+                        width={25}
+                        height={25}
                         className="brightness-90 invert"
                       />
                       {item.name}
