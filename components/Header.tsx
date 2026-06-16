@@ -14,23 +14,23 @@ export function Header() {
             ↑ Top
           </Link>
 
-          {/* Dark Mode Toggle */}
-          <button
+          {/* Dark Mode Toggle - maybe use later */}
+          {/* <button
             className="text-foreground/70 hover:text-foreground transition-colors text-sm md:text-base"
             title="Toggle dark mode"
             aria-label="Toggle theme"
           >
             🌙
-          </button>
+          </button> */}
 
-          {/* Language Toggle */}
-          <button
+          {/* Language Toggle - maybe use later*/}
+          {/* <button
             className="text-foreground/70 hover:text-foreground transition-colors text-sm md:text-base font-medium"
             title="Toggle language"
             aria-label="Toggle language"
           >
             EN
-          </button>
+          </button> */}
         </nav>
       </div>
     </header>

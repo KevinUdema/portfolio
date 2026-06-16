@@ -5,9 +5,22 @@ html {
 }
 
 :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+
+/* Incase I wanna keep darkmode & lightmode in the future 
+ :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -16,12 +29,7 @@ html {
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
