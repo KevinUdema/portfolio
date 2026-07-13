@@ -5,7 +5,7 @@ import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
-import { heroContent } from "@/data/portfolio";
+import { heroContent, skills } from "@/data/portfolio";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         imageSrc={heroContent.imageSrc}
         imageAlt={heroContent.imageAlt}
       />
-      <Skills />
+      <Skills title="Skills" skillGroups={skills} />
       <Experience />
       <About />
       <Projects />
