@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-export function Hero() {
+interface HeroProps {
+  name: string;
+  introText: string;
+  imageSrc: string;
+  imageAlt: string;
+}
+
+export function Hero({ name, introText, imageSrc, imageAlt }: HeroProps) {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-background to-background px-4 py-20">
       <div className="container flex flex-col md:flex-row lg:px-20">
@@ -9,15 +16,13 @@ export function Hero() {
           {/* Main heading with fade-in animation */}
           <div className="transition-all duration-1000">
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Kevin Udema
+              {name}
             </h1>
             {/* Hello title */}
             <h2 className="text-2xl md:text-5xl">Hello!</h2>
             {/* Tagline */}
             <p className="text-xl md:text-2xl text-foreground/70 mb-12 leading-relaxed">
-              Ik ben een front-end developer die er naar streeft om door middel
-              van een sterk probleemoplossend vermogen en veel aandacht voor
-              User Experience de beste gebruikerservaring te realiseren.
+              {introText}
             </p>
           </div>
         </div>
@@ -26,8 +31,8 @@ export function Hero() {
         <div className="flex-1 flex justify-center">
           <div className="w-full max-w-sm aspect-square rounded-3xl overflow-hidden bg-foreground/10">
             <Image
-              src="/profile2.jpg"
-              alt="Kevin's profile picture"
+              src={imageSrc}
+              alt={imageAlt}
               width={500}
               height={500}
               className="object-cover object-top"

@@ -46,7 +46,7 @@ export function Experience() {
                 </button>
 
                 {isOpen && (
-                  <div className="border-t border-foreground/10 px-6 pb-6 text-foreground/80 text-sm leading-relaxed">
+                  <div className="border-t border-foreground/10 px-6 pt-3 pb-6 text-foreground/80 text-sm leading-relaxed ">
                     {item.details}
                   </div>
                 )}
