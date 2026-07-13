@@ -1,3 +1,10 @@
+export interface HeroContent {
+  name: string;
+  introText: string;
+  imageSrc: string;
+  imageAlt: string;
+}
+
 export interface Skill {
   category: string;
   items: { name: string; logo: string }[];
@@ -27,6 +34,14 @@ export interface ExperienceItem {
 }
 
 // Skills data - easily extensible with new categories
+
+export const heroContent: HeroContent = {
+  name: "Kevin Udema",
+  introText:
+    "Ik ben een front-end developer die er naar streeft om door middel van een sterk probleemoplossend vermogen en veel aandacht voor User Experience de beste gebruikerservaring te realiseren.",
+  imageSrc: "/profile2.jpg",
+  imageAlt: "Kevin's profile picture",
+}
 
 export const skills: Skill[] = [
   {
