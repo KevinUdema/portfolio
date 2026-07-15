@@ -202,13 +202,6 @@ export const experiences: ExperienceItem[] = [
   },
   {
     id: 8,
-    title: "Hanzehogeschool, Groningen — HBO ICT",
-    timeframe: "September 2017 - 2022",
-    where: "Hanzehogeschool Groningen",
-    details: "HBO Major: Software Engineering.",
-  },
-  {
-    id: 9,
     title: "Noorderpoort Groningen, Groningen — stagiair Web Development",
     timeframe: "September 2016 - Februari 2017",
     where: "Noorderpoort Groningen",
@@ -216,7 +209,7 @@ export const experiences: ExperienceItem[] = [
       "Een website voor Talent for Romania, een initiatief vanuit de scholen om in Roemenië studiegebouwen te bouwen met studenten van de opleidingen. CMS systeem & website ontwikkeld met een klasgenoot.",
   },
   {
-    id: 10,
+    id: 9,
     title: "NC-websites, Winschoten — Stagiair Web Development",
     timeframe: "September 2015 - Februari 2016",
     where: "NC-websites",
@@ -224,15 +217,25 @@ export const experiences: ExperienceItem[] = [
       "Stagiair webdesign voor opleiding MBO Applicatieontwikkeling niveau 4.",
   },
   {
-    id: 11,
+    id: 10,
     title: "NC-websites, Winschoten — Front-end developer",
     timeframe: "Februari 2015 - Januari 2019",
     where: "NC-websites",
     details:
       "Front-end development werk verricht voor NC-websites in Winschoten (Groningen). Na mijn stage blijven werken en voornamelijk webbouw opdrachten uitgevoerd met de bijbehorende PHP- en JavaScript werkzaamheden en met behulp van NC-websites hun eigen CMS.",
+  }
+];
+
+export const educations: ExperienceItem[] = [
+  {
+    id: 1,
+    title: "Hanzehogeschool, Groningen — HBO ICT",
+    timeframe: "September 2017 - 2022",
+    where: "Hanzehogeschool Groningen",
+    details: "HBO Major: Software Engineering.",
   },
   {
-    id: 12,
+    id: 2,
     title: "Noorderpoort, Winschoten — MBO applicatieontwikkeling",
     timeframe: "September 2014 - Juli 2017",
     where: "Noorderpoort Winschoten",

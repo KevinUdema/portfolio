@@ -1,20 +1,25 @@
 "use client";
 
 import { useState } from "react";
-import { experiences } from "@/data/portfolio";
+import type { ExperienceItem } from "@/data/portfolio";
 
-export function Experience() {
+interface experienceItem {
+  title: string;
+  xpitem: ExperienceItem[];
+}
+
+export function Experience({ title, xpitem }: experienceItem) {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
     <section id="experience" className="w-full py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
-          My experience
+          {title}
         </h2>
 
         <div className="flex flex-col gap-4">
-          {experiences.map((item) => {
+          {xpitem.map((item) => {
             const isOpen = openId === item.id;
 
             return (
