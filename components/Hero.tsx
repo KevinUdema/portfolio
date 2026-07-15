@@ -9,7 +9,7 @@ interface HeroProps {
 
 export function Hero({ name, introText, imageSrc, imageAlt }: HeroProps) {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-background to-background px-4 py-20">
+    <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-#2b3d3d to-background px-4 py-20">
       <div className="container flex flex-col md:flex-row lg:px-20">
         {/* Left side - Text content */}
         <div className="flex-1 text-center md:text-left">
