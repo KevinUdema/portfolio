@@ -9,8 +9,12 @@ interface HeroProps {
 
 export function Hero({ name, introText, imageSrc, imageAlt }: HeroProps) {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-t from-slate-800 to-background px-4 py-20">
-      <div className="container flex flex-col md:flex-row lg:px-20">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-t from-slate-800 to-background px-4 py-20">
+      <div
+        className="absolute inset-0 bg-[url('/backgrounds/bg1.svg')] bg-cover bg-center bg-no-repeat opacity-30 pointer-events-none"
+        aria-hidden="true"
+      />
+      <div className="relative container flex flex-col md:flex-row lg:px-20">
         {/* Left side - Text content */}
         <div className="flex-1 text-center md:text-left">
           {/* Main heading with fade-in animation */}
@@ -19,7 +23,7 @@ export function Hero({ name, introText, imageSrc, imageAlt }: HeroProps) {
               {name}
             </h1>
             {/* Hello title */}
-            <h2 className="text-2xl md:text-5xl">Hello!</h2>
+            <h2 className="text-2xl md:text-3xl">Hello!</h2>
             {/* Tagline */}
             <p className="text-xl md:text-2xl text-foreground/70 mb-12 leading-relaxed">
               {introText}

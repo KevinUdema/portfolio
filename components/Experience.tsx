@@ -12,7 +12,7 @@ export function Experience({ title, xpitem }: experienceItem) {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <section id="experience" className="w-full py-20 px-4">
+    <section id="experience" className="relative z-10 w-full py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
           {title}
@@ -30,7 +30,7 @@ export function Experience({ title, xpitem }: experienceItem) {
                 <button
                   type="button"
                   onClick={() => setOpenId(isOpen ? null : item.id)}
-                  className="w-full px-6 py-5 text-left flex items-start justify-between gap-6"
+                  className="w-full px-6 py-5 text-left flex items-center justify-between gap-6"
                   aria-expanded={isOpen}
                 >
                   <div className="flex-1">
