@@ -12,7 +12,7 @@ export function Experience({ title, xpitem }: experienceItem) {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <section id="experience" className="w-full py-20 px-4 bg-background">
+    <section id="experience" className="w-full py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
           {title}

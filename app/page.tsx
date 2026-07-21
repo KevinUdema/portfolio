@@ -1,5 +1,4 @@
 import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
@@ -18,9 +17,10 @@ export default function Home() {
         imageAlt={heroContent.imageAlt}
       />
       <Skills title="Skills" skillGroups={skills} />
-      <Experience title="Work experience" xpitem={experiences} />
-      <Experience title="Education" xpitem={educations} />
-      <About />
+      <section className="relative w-full bg-gradient-to-t from-slate-800 to-background">
+        <Experience title="Work experience" xpitem={experiences} />
+        <Experience title="Education" xpitem={educations} />
+      </section>
       <Projects />
       <Contact />
     </main>
