@@ -2,8 +2,13 @@ import { contactLinks } from "@/data/portfolio";
 
 export function Contact() {
   return (
-    <section className="w-full py-20 px-4 bg-background">
-      <div className="max-w-3xl mx-auto text-center">
+    <section
+      id="contact"
+      className="relative w-full overflow-hidden py-20 px-4 bg-background"
+    >
+      <div className="absolute inset-0 bg-[url('/backgrounds/bg1.svg')] bg-cover bg-no-repeat opacity-10" />
+
+      <div className="relative max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
           Let&apos;s work together
         </h2>
