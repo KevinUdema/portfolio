@@ -39,7 +39,7 @@ export const heroContent: HeroContent = {
   name: "Kevin Udema",
   introText:
     "Ik ben een front-end developer die er naar streeft om door middel van een sterk probleemoplossend vermogen en veel aandacht voor User Experience de beste gebruikerservaring te realiseren.",
-  imageSrc: "/kevin2.jpg",
+  imageSrc: "/kevin1.jpg",
   imageAlt: "Kevin's profile picture",
 }
 
