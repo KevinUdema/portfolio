@@ -6,7 +6,7 @@ export function Contact() {
       id="contact"
       className="relative w-full overflow-hidden py-20 px-4 bg-background"
     >
-      <div className="absolute inset-0 bg-[url('/backgrounds/bg1.svg')] bg-cover bg-no-repeat opacity-10" />
+      <div className="absolute inset-0 bg-[url('/backgrounds/bg1.svg')] bg-cover bg-no-repeat opacity-20" />
 
       <div className="relative max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

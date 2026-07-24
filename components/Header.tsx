@@ -6,11 +6,11 @@ export function Header() {
       <div className="container flex justify-end lg:px-20">
         <nav className="flex items-center gap-6">
           <Link
-            href="#projects"
+            href="#skills"
             className="text-foreground/70 hover:text-foreground transition-colors text-sm md:text-base"
-            title="View my projects"
+            title="My experience"
           >
-            Projects
+            Skills
           </Link>
           <Link
             href="#experience"
@@ -18,6 +18,13 @@ export function Header() {
             title="My experience"
           >
             Experience
+          </Link>
+          <Link
+            href="#projects"
+            className="text-foreground/70 hover:text-foreground transition-colors text-sm md:text-base"
+            title="View my projects"
+          >
+            Projects
           </Link>
           <Link
             href="#contact"

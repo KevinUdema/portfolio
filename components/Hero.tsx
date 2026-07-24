@@ -33,14 +33,14 @@ export function Hero({ name, introText, imageSrc, imageAlt }: HeroProps) {
 
         {/* Right side - Profile picture */}
         <div className="flex-1 flex justify-center">
-          <div className="w-full max-w-sm aspect-square rounded-3xl overflow-hidden bg-foreground/10">
+          <div className="relative w-full max-w-sm aspect-square rounded-3xl overflow-hidden bg-foreground/10">
             <Image
               src={imageSrc}
               alt={imageAlt}
-              width={500}
-              height={500}
+              fill
               className="object-cover object-top"
               loading="eager"
+              sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
         </div>

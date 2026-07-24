@@ -51,7 +51,7 @@ function SkillGroup({ skillGroup }: SkillGroupProps) {
 // Loops through the skillGroups and renders each SkillGroup component.
 export function Skills({ title, skillGroups }: SkillsProps) {
   return (
-    <section className="w-full py-20 px-4 bg-background">
+    <section id="skills" className="w-full py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">
           {title}
